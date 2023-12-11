@@ -3,7 +3,7 @@
 /**
  * Plugin Name: WP Affiliate Link Tracker
  * Description: ASP広告掲載URL抽出用プラグイン
- * Version: 0.1.2
+ * Version: 0.1.3
  * Plugin URI: 
  * Author: 
  * Author URI: 
