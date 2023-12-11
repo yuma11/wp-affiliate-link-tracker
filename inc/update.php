@@ -75,9 +75,9 @@ add_filter( 'plugins_api', function( $res, $action, $args ) {
 	$readme = preg_replace( '/<img([^>]+)>/', '<ul><li><img$1></li></ul>', $readme );
 
 	return (object) array(
-		'name' => 'Afilink Extractor',
+		'name' => 'WP Affiliate Link Tracker',
 		'slug' => 'wp-affiliate-link-tracker',
-		'path' => 'afilink-extractor/index.php',
+		'path' => 'wp-affiliate-link-tracker/index.php',
 		'version' => $update_data['version'] ?? '',
 		'download_link' =>  $update_data['package'] ?? '',
 		'sections' => array(
