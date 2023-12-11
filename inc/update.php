@@ -42,8 +42,7 @@ function get_readme() {
 /**
  * アップデートチェック
  */
-add_filter( 'update_plugins_ls-afilink-extractor', function( $update, $plugin_data ) {
-	var_export($update);
+add_filter( 'update_plugins_wp-affiliate-link-tracker', function( $update, $plugin_data ) {
 	if ( ! current_user_can( 'manage_options' ) ) return $update;
 	$update_data = get_update_data();
 	if ( ! $update_data ) return $update;
