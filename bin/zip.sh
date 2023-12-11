@@ -10,7 +10,7 @@ find . -name '.DS_Store' -type f -ls -delete
 cd ../
 
 # 不要なファイルを除いてzip化
-zip -r afilink-extractor-${1}.zip afilink-extractor -x "*/.*" "*/__*" "*/bin*" "*/node_modules*" "*/version.json" "*/package.json" "*/package-lock.json"
+zip -r wp-affiliate-link-tracker-${1}.zip wp-affiliate-link-tracker -x "*/.*" "*/__*" "*/bin*" "*/node_modules*" "*/version.json" "*/package.json" "*/package-lock.json"
 
 # src削除
 # zip -r listup-afilink.zip listup-afilink -x "listup-afilink/src/img*" "listup-afilink/src/js*" "listup-afilink/src/scss*" "listup-afilink/src/gutenberg/*.js" "listup-afilink/src/gutenberg/*.js" "!listup-afilink/src/(dir)"
