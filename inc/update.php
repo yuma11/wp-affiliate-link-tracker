@@ -5,7 +5,7 @@ namespace OPR\AfiLT;
 function get_update_data() {
 
 	// GitHub APIを使って、Releaseの最新バージョン情報を取得する
-	$response = wp_remote_get( 'https://raw.githubusercontent.com/ddryo/afilink-extractor/main/version.json' );
+	$response = wp_remote_get( 'https://raw.githubusercontent.com/yuma11/wp-affiliate-link-tracker/main/version.json' );
 
 	// レスポンスエラー
 	if( is_wp_error( $response ) || 200 !== wp_remote_retrieve_response_code( $response ) ) {
