@@ -25,7 +25,7 @@ function get_readme() {
 
 	$cache = get_transient('wp_afilt_readme_cache');
 	if ($cache) return $cache;
-	$response = wp_remote_get( 'https://raw.githubusercontent.com/ddryo/afilink-extractor/main/README.md' );
+	$response = wp_remote_get( 'https://raw.githubusercontent.com/yuma11/wp-affiliate-link-tracker/main/README.md' );
 
 	// レスポンスエラー
 	if( is_wp_error( $response ) || 200 !== wp_remote_retrieve_response_code( $response ) ) {
@@ -43,6 +43,7 @@ function get_readme() {
  * アップデートチェック
  */
 add_filter( 'update_plugins_ls-afilink-extractor', function( $update, $plugin_data ) {
+	var_export($update);
 	if ( ! current_user_can( 'manage_options' ) ) return $update;
 	$update_data = get_update_data();
 	if ( ! $update_data ) return $update;
